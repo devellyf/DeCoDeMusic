@@ -40,7 +40,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
             [
                 [
                     InlineKeyboardButton(
-                        "𝐂𝐨𝐦𝐦𝐚𝐧𝐝 🥀", url="http://telegra.ph/Music-command-SHY-12-05")
+                        "💫ADD ME TO YOUR GROUP💫", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                   ],[
                     InlineKeyboardButton(
                        " 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🔄", url="https://t.me/Shykillersupportchat"
@@ -50,8 +50,8 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟ�
                     )
                 ],[
                     InlineKeyboardButton(
-                        "🥀 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩🥀",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        "🥀Command🥀",
+                        url="http://telegra.ph/Music-command-SHY-12-05"
                     )
                 ]
             ]
