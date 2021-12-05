@@ -378,7 +378,7 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
-            photo="final.png",
+            photo="https://telegra.ph/file/885013df4891356881876.jpg",
             caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**#⃣ Queued Position:** {}".format(
                 title,
                 duration,
@@ -398,7 +398,7 @@ async def play(_, message: Message):
                 stream_type=StreamType().local_stream,
             ) 
         await message.reply_photo(
-            photo="final.png",
+            photo="https://telegra.ph/file/885013df4891356881876.jpg",
             reply_markup=keyboard,
             caption="**🎵 Song:** {}\n**🕒 Duration:** {} min\n**👤 Added By:** {}\n\n**▶️ Now Playing at `{}`...**".format(
                 title, duration, message.from_user.mention(), message.chat.title
