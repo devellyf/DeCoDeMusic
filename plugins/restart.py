@@ -11,7 +11,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 @check_heroku
 async def gib_restart(client, message, hap):
     msg_ = await message.reply_photo(
-        photo="https://te.legra.ph/file/f412a0a94c1da161a7013.jpg", 
+        photo="https://telegra.ph/file/885013df4891356881876.jpg", 
         caption="**Restaring**\n**Please Wait...**"
     )
     hap.restart()
