@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 from config import BOT_NAME as bn
 from helpers.filters import other_filters2
 from time import time
@@ -11,8 +11,8 @@ START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
 TIME_DURATION_UNITS = (
     ("week", 60 * 60 * 24 * 7),
-    ("day", 60 ** 2 * 24),
-    ("hour", 60 ** 2),
+    ("day", 60  2 * 24),
+    ("hour", 60  2),
     ("min", 60),
     ("sec", 1),
 )
@@ -32,29 +32,56 @@ async def _human_time_duration(seconds):
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
         await message.reply_text(
-        f"""**Hey, I'm {bn}🥀
-I Cᴀɴ Pʟᴀʏ Mᴜsɪᴄ Iɴ Yᴏᴜʀ Gʀᴏᴜᴩ Vᴏɪᴄᴇ Cʜᴀᴛ. Dᴇᴠᴇʟᴏᴩᴇᴅ Bʏ [shykiller](https://t.me/Shykiller).
-Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Aɴᴅ Pʟᴀʏ Mᴜsɪᴄ Fʀᴇᴇʟʏ!**
-        """,
+        f"""<b>👋 𝙃𝙀𝙇𝙇𝙊 𝙏𝙃𝙀𝙍𝙀 {message.from_user.mention}</b> ❗ 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙈𝙔 𝘽𝙊𝙏💞
+
+𝙏𝙃𝙄𝙎 𝙄𝙎 𝘼 𝘽𝙊𝙏 𝘿𝙀𝙎𝙄𝙂𝙉𝙀𝘿 𝙏𝙊 𝙋𝙇𝘼𝙔 𝙈𝙐𝙎𝙄𝘾 𝙄𝙉 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋𝙎!
+
+𝙃𝙀𝙍𝙀 𝘼𝙍𝙀 𝙎𝙊𝙈𝙀 𝘾𝙈𝘿𝙎 𝙏𝙊 𝙐𝙎𝙀 𝙏𝙃𝙄𝙎 𝘽𝙊𝙏 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💫ADD ME TO YOUR GROUP💫", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "➕Summon Me➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)
                   ],[
                     InlineKeyboardButton(
-                       " 𝐒𝐮𝐩𝐩𝐨𝐫𝐭🔄", url="https://t.me/Shykillersupportchat"
+                       "🗣️ Support 🗣️", url="https://t.me/Shykillersupportchat"
                     ),
                     InlineKeyboardButton(
-                        "𝐔𝐩𝐝𝐚𝐭𝐞𝐬❤️", url="https://t.me/Shykillersupportchat"
-                    )
+                        "📣 Updates 📣", url="https://t.me/Shykillersupport")
                 ],[
                     InlineKeyboardButton(
-                        "🥀Command🥀",
-                        url="http://telegra.ph/Music-command-SHY-12-05"
+                        "📚 Commands", callback_data="cbcmds"
                     )
                 ]
             ]
         ),
      disable_web_page_preview=True
     )
+
+                    
+                   
+
+                    
+
+                    
+                   
+
+                      
+
+                       
+
+                   
+
+               
+
+           
+
+        
+
+     
+
+
+
+
+                
